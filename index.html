@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Funciones de Jquery</title>
+        <meta name="description" content="Uso básico de funciones de jquery">
+        <!-- Cargamos CDN CSS 5.0.2 Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- Cargamos CDN DE JQUERY 3.6.0 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- CARGAMOS FUNCIONES DE JQUERY ARCHIVO LOCAL -->
+        <script src="assets/js/functions.js"></script>
+        <style>
+        .card{
+        display: none;
+        }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Funciones de JQUERY</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 my-3">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Ejemplo de Click</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                        <button class="btn btn-outline-secondary" type="button">Ejemplo de Click</button>
+                    </div>
+                </div>
+                <div class="col-md-6 my-3">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Ejemplo de hide</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                        <button class="btn btn-outline-secondary" type="button">Ejemplo de hide</button>
+                    </div>
+                </div>
+                <div class="col-md-6 my-3">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Ejemplo de show</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                        <div class="alert alert-danger" role="alert">
+                            A simple danger alert—check it out!
+                        </div>
+                        <button class="btn btn-outline-secondary" type="button">Ejemplo de show</button>
+                    </div>
+                </div>
+                <div class="col-md-6 my-3">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Ejemplo de toggle</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                        <button class="btn btn-outline-secondary" type="button">Example button</button>
+                    </div>
+                </div>
+                <div class="col-md-6 my-3">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Ejemplo de slideDown</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card my-4">
+                                    <img src="http://placehold.jp/400x150.png" class="card-img-top img-fluid" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-secondary" type="button">Example button</button>
+                    </div>
+                </div>
+                <div class="col-md-6 my-3">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Ejemplo de slideUp</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="accordion accordion-flush my-3" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Accordion Item #1
+                                        </button>
+                                        </h3>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        Accordion Item #2
+                                        </button>
+                                        </h3>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        Accordion Item #3
+                                        </button>
+                                        </h3>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-secondary" type="button">Example button</button>
+                    </div>
+                </div>
+                <div class="col-md-6 my-3">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Ejemplo de slideToggle</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                        <button class="btn btn-outline-secondary" type="button">Example button</button>
+                    </div>
+                </div>
+                <div class="col-md-6 my-3">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Ejemplo de fadeIn</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                        <button class="btn btn-outline-secondary" type="button">Example button</button>
+                    </div>
+                </div>
+                <div class="col-md-6 my-3">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Ejemplo de fadeOut</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                        <button class="btn btn-outline-secondary" type="button">Example button</button>
+                    </div>
+                </div>
+                <div class="col-md-6 my-3">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Ejemplo de addClass</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                        <button class="btn btn-outline-secondary" type="button">Example button</button>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 my-3">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Ejemplo de before</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                        <button class="btn btn-outline-secondary" type="button">Example button</button>
+                    </div>
+                </div>
+                <div class="col-md-6 my-3">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Ejemplo de after</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                        <button class="btn btn-outline-secondary" type="button">Example button</button>
+                    </div>
+                </div>
+                <div class="col-md-6 my-3">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Ejemplo de append</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                        <button class="btn btn-outline-secondary" type="button">Example button</button>
+                    </div>
+                </div>
+                <div class="col-md-6 my-3">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Ejemplo de html</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                        <button class="btn btn-outline-secondary" type="button">Example button</button>
+                    </div>
+                </div>
+                <div class="col-md-6 my-3">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Ejemplo de attr</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                        <button class="btn btn-outline-secondary" type="button">Example button</button>
+                    </div>
+                </div>
+                <div class="col-md-6 my-3">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Ejemplo de val</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                        <button class="btn btn-outline-secondary" type="button">Example button</button>
+                    </div>
+                </div>
+                <div class="col-md-6 my-3">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Ejemplo de text</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                        <button class="btn btn-outline-secondary" type="button">Example button</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
